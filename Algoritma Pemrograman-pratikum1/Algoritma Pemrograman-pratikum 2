@@ -1,0 +1,31 @@
+# -*- coding: utf-8 -*-
+"""
+@judul : Pratikum 2 Materi 
+@Hari/Tanggal : senin, 20210927
+@Mata Kuliah : Algoritma dan pemrograman 
+@NIM : 065002100017
+@author : Stevani Tasya Bawano
+"""
+bilE= int(input(" masukan nilai e:"))
+bilS= int(input(" masukan nilai s"))
+
+jumlah = bilE + bilS
+print("jumlah nilai e dan s adalah",jumlah)
+
+selisih = abs(bilS - bilE)
+print("selisih nilai e dan s adalah",selisih)
+
+kali = bilE * bilS
+print("kali nilai e dan s adalah",kali)
+
+sisabagi = bilE % bilS
+print("sisabagi nilai e dan s adalah",sisabagi)
+
+bagi = bilE / bilS
+print("bagi nilai e dan s adalah",bagi)
+
+from math import log10
+print("logaritma basis 10 dari",bilE, "adalah",log10(bilE))
+
+pangkat = bilE ** bilS
+print("pangkat nilai e dan s adalah",pangkat)

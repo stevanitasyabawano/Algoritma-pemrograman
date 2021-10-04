@@ -1,0 +1,22 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Sep 26 22:04:02 2021
+
+ 
+@materi : Variabel & Pemrograman Dasar
+@Judul : Pratikum 1 Materi
+@Hari/Tanggal : Minggu 20210926
+@NIM : 065002100017
+@author : Stevani Tasya Bawano
+"""
+
+print("hallo")
+print("hitung luas ruangan")
+
+x = int(input("panjang ruangan"))
+y = int(input("lebar ruangan"))
+
+f = input("masukan satuan (mater atau inci)")
+s = x*y
+
+print("luas ruangan dengan panjang", x, "luas ruangan dengan lebar", y, "adalah:", x*y)

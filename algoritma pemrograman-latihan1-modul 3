@@ -1,0 +1,26 @@
+# -*- coding: utf-8 -*-
+"""
+@Materi: Control Structure
+@Judul: Pratikum 3 Materi
+@Hari/Tanggal: senin 2021104
+@NIM: 065002100017
+@author: Stevani Tasya Bawano
+"""
+
+import math
+
+print("jenis segitiga berdasarkan panjang sisi ")
+ta = float(input("masukan sisi a ="))
+tb = float(input("masukan sisi b ="))
+tc = float(input("masukan sisi c ="))
+
+
+if(ta==tb==tc):
+    print("merupakan segitiga sama sisi")
+elif(ta==tb or tb==tc or tc==ta):
+    print("merupakan segitiga sama kaki")  
+else: 
+  if((ta+tb <= tc) or (ta+tc <= tb) or (tb+tc <= ta)):
+    print(" bukan merupakan segitiga")
+  else:
+    print("merupakan segitiga sembarang")    

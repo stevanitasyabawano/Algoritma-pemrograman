@@ -1,0 +1,47 @@
+# -*- coding: utf-8 -*-
+"""
+@materi  :  Struktur kendali (control structur)
+@Hari/Tanggal : 20211004
+@NIM : 065002100017
+@author : Stevani Tasya Bawano
+"""
+
+print('mencari persamaan kuadrat dan determinan')
+s = float(input('masukan nilai s: '))
+t = float(input('masukan nilai t: '))
+b = float(input('masukan nilai b: '))
+
+from math import sqrt
+
+dt = t * t - (4 * s * b)
+if (s == 0):
+    print('bukan persamaan kuadrat')
+
+elif (dt > 0):
+    x1 = (-t + sqrt(dt)) / (2 * s)
+    x2 = (-t + sqrt(dt)) / (2 * s)
+    print('persamaan kuadrat: ', s , 'x-2 +', t, 'x +',b)
+    print('determinan: ', dt)
+    print('memiliki akar persamaan x1 =', x1, 'dan x2 =', x2)
+    
+elif (dt == 0):
+    kembar = x1 = x2 = (-t + sqrt (dt)) / (2 * t)
+    print('persamaan kuadrat:', s , 'x*2 +' , t, 'x +',b)
+    print('Determinan:' , dt)
+    print('memiliki akar persamaan x1 = x2 =', kembar)
+    
+elif (dt < 0):
+    print('persamaan kuadrat:', s , 'x-2 +', t, 'x +',b)
+    print('akar-akar persamaan adalah bilangan imajiner')
+    print('Determinan: ', dt)
+    print('x1 = -', t, '+ akar',dt, '/ 2 *', s)
+    print('x2 = -', t, '- akar',dt, '/ 2 *', s)
+    
+    
+    
+
+
+
+
+    
+    

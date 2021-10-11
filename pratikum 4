@@ -1,0 +1,13 @@
+# -*- coding: utf-8 -*-
+"""
+
+@NIM; 065002100017
+@author: Stevani Tasya Bawano
+"""
+s = int(input("insert number : "))
+for i in range(0,s):
+    for j in range (0,s):
+        print(s,end="")
+        
+    s-=1
+    print("")

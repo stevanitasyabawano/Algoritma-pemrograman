@@ -1,0 +1,58 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Oct 18 17:17:42 2021
+@Pratikum 5
+@author: Sevani Tasya Bawano
+@NIm   :065002100017
+"""
+
+print ("hello world")
+print ("welcome to my program ")
+
+s = '0'
+total = 0
+tampung = 0
+
+while (s != "") :
+    s = str(input("masukkan nilai :"))
+    tampung = tampung + 1
+    if (s == ''):
+        break ;
+    elif (s== 'A'):
+        print ("nilai = 4.00")
+        total += 4.00
+    elif (s == 'A-'):
+        print ("nilai = 3.75")
+        total += 3.75
+    elif (s== 'B+'):
+        print ("nilai = 3.50")
+        total += 3.50
+    elif (s == 'B'):
+        print ("nilai = 3.00")
+        total += 3.00
+    elif (s== 'B-'):
+        print ("nilai = 2.75")
+        total += 2.75
+    elif (s == "c+"):
+        print ("nilai = 2.50")
+        total += 2.50
+    elif (s == "c"):
+        print ("nilai = 2.00")
+        total += 2.00
+    elif (s == "c-"):
+        print ("nilai = 1.75")
+        total += 1.75
+    elif (s == "D"):
+        print ("nilai = 1.50")
+        total += 1.50
+    elif (s == "E"):
+        print ("nilai = 1.25")
+        total += 1.25
+    else :
+        tampung= tampung-1
+        print ("masukkan nilai yang benar :")
+if (tampung ==1):
+        print ("rata ratanya adalah 0")
+else :
+        ratarata  = total/(tampung-1)
+        print ("rata ratanya adalah :", ratarata)

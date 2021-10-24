@@ -1,0 +1,39 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Oct 25 00:16:59 2021
+@Pratikum: modul 5
+@NIM     :065002100017
+@author: Stevani Tasya Bawano
+"""
+
+print("program menghitung tiket kebun binatang")
+K = 0
+jumlah = 0
+S = 0
+
+while(K!='') :
+    K=int(input("Umur : "))
+    S+=1
+    print("Untuk Menghitung masukan angka 0 ")
+    
+    if( K == 0 ) :
+        break;
+    elif( K <= 2 ) :
+        print("langsung masuk")
+        jumlah += 0
+        print("mendapatkan hasil", jumlah)
+    elif( K >= 3 and K <= 12) :
+        jumlah += 14.00
+        print("$14.00")
+        print("mendapatkan hasil", jumlah)
+    elif( K >= 66 ) :
+        jumlah += 18.00
+        print("$18.00")
+        print("mendapatkan hasil", jumlah)
+    else:
+        jumlah += 23.00
+        print("$23.00")
+        print("mendapatkan hasil", jumlah)
+        
+uang=int(input("Masukkan hasil uang-Nya : "))  
+print("mendapatkan kembaliannya : ", uang-jumlah)

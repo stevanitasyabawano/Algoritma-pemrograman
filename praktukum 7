@@ -1,0 +1,36 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Nov  1 15:48:25 2021
+@NIM   : 065002100017
+@author: Stevani Tasya Bawano
+"""
+
+def kateg(s="0",total=0,menampung=0 ):
+    while (s != "") :
+        s = str(input("silahkan masukkan nilainya :"))
+        menampung = menampung + 1
+        if (s == ''):
+            return total/(menampung -1)
+        elif (s == 'A'):
+            print ("nilainya = 4.00")
+            total += 4.00
+        elif (s == 'A-'):
+            print ("nilainya = 3.75")
+            total += 3.75
+        elif (s== 'B+'):
+            print ("nilainya = 3.50")
+            total += 3.50
+        elif (s == 'B'):
+            print ("nilainya = 3.00")
+            total += 3.00
+        elif (s== 'B-'):
+            print ("nilainya = 2.75")
+            total += 2.75
+        elif (s== "D"):
+            print('nilai=1.5')
+            total += 1.75
+        else :
+            print ("masukan nilai valid nya")
+            
+rata_rata = kateg ()
+print("rata-ratanya adalah",rata_rata)

@@ -1,0 +1,39 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Nov  8 00:31:25 2021
+@judul  : Pratikum 7 Algoritma
+@Materi : fungsi pada pemrograman python
+@author : Stevani Tasya Bawano
+@NIM    : 065002100017
+
+"""
+print("Saya ingin menentukan jumlah hari dalam sebulan")
+print("Masukan 0 untuk mengakhiri program")
+
+def hari (s=0, t=0):
+    s=True
+    while s:
+        s=int(input("Masukan bulan [1-12]: "))
+        if s>=13 or s<=-1:
+            print("invalid value entered") 
+            print("Masukan 0 untuk mengakhiri program")
+        elif s==1 or s==3 or s==5 or s==7 or s==8 or s==10 or s==12:
+            print("bulan ini ada 31 hari")
+            print("Masukan 0 untuk mengakhiri program")
+        elif s==2:
+            t=int(input("masukkan tahun: "))
+            if(t%4==0 and s==2):
+               print("bulan ini ada 28 hari")
+               print("Masukan 0 untuk mengakhiri program")
+            else:
+                print("bulan ini ada 29 hari")
+                print("Masukan 0 untuk mengakhiri program")
+        elif s==4 or s==6 or s==9 or s==11:
+            print("bulan ini ada 30 hari")
+            print("Masukan 0 untuk mengakhiri program")
+
+        if s==0:
+            return s
+
+bulan_tahun = hari()
+print("program selesai, terima kasih telah menggunakan program ini")

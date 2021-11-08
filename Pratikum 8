@@ -1,0 +1,19 @@
+def bil_prima(angka):
+    if angka > 1:
+        prima(angka)
+    else:
+        print(angka,"ini adalah bilangan prima")
+def prima(angka):
+    for s in range(2,angka):
+             if (angka % s) == 0:
+                 print(angka,"ini bukan bilangan prima")
+                 print("karena", s,"dikalikan",angka//s,"hasilnya adalah",angka)
+                 break
+
+    else:
+        print(angka,"ini adalah bilangan prima")
+    
+X = 1
+while X == 1 :
+    angka = int(input('masukan bilangannya = '))
+    bil_prima(angka)

@@ -1,0 +1,31 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Nov 15 01:28:59 2021
+@Materi: Fungsi
+@NIM   : 065002100017
+@author: Stevani Tasya Bawano
+"""
+print("Cek Nomor")
+s = False
+
+def cek(nomor):
+    if nomor in [10,11,12,13]:
+        print(nomor,'th')
+    else:
+        angka=nomor%10
+        if angka==1:
+            print(nomor, 'st')
+        elif angka==2:
+            print(nomor, 'nd')
+        elif angka==3:
+            print(nomor, 'rd')
+        else:
+            print(nomor, 'th')
+            
+while not s:
+    print("Masukan 0 untuk menghentikan program")
+    nomor = int(input("Masukan Angka: "))
+    if nomor == 0:
+        s = True
+        print(nomor, 'th')
+        print("Terimakasih telah menggunakan program ini")

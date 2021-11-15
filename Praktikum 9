@@ -1,0 +1,22 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Nov 15 15:39:39 2021
+@NIM   : 065002100017
+@author: Stevani Tasya Bawano
+"""
+
+def jumlah (b = 0, s = 0 ,c = 1):
+   if (s <=0):
+       hasil =0
+       return hasil
+   else :
+         a = int(input("masukkan bilangan ke-" + str(c) + ":"))
+         if (s ==1):
+             return a
+         else :
+             c+=1
+             hasil = a + jumlah (b, s-1, c)
+             return hasil
+t = int(input('masukkan jumlah :'))
+nilai = jumlah (s=t)
+print ("hasil dari penjumlahan adalah :"+ str(nilai))

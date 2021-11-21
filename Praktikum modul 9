@@ -1,0 +1,20 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Nov 21 01:57:35 2021
+@Judul : Praktikum 8
+@NIM   : 065002100017
+@author: Stevani Tasya Bawano
+"""
+
+s = int(input("Masukkan Angkanya : "))
+t = int(input("Masukkan Angka untuk dipangkatkan: "))
+
+def pangkat( s, t ):
+    
+    if t >= 1 :
+        return s * pangkat(s, t  - 1)
+    
+    return s
+
+hasil = pangkat( s, t )
+print(f"hasilnya adalah = {hasil}")

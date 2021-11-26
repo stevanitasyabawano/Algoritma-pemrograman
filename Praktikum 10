@@ -1,0 +1,33 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Nov 26 17:36:50 2021
+@Praktikum 10
+@author: Stevani Tasya Bawano
+@NIM   : 065002100017
+"""
+
+def edit():
+    
+    biodata = open("Biodata.txt",'w')
+    biodata.write(str())
+    biodata.close()
+    
+nama = str(input("masukan nama mu: "))
+umur = str(input("masukan umur mu : "))
+alamat = str(input("masukan alamat mu : "))
+email = str(input("masukan email : "))
+dosen = str(input("masukan wali dosen mu : "))
+
+def hasil():
+    
+    baca = open("Biodata.txt",'r')
+    text = baca.read()
+    print(text)
+    baca.close()
+    
+print("berikut data kamu")
+print(nama)
+print(umur)
+print(alamat)
+print(email)
+print(dosen)

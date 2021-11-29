@@ -1,0 +1,54 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Nov 29 17:28:16 2021
+
+
+@Materi       : Search, List & Sorting
+@Judul        : Praktikum 11 lat.1 (modul 10)
+@Hari/Tanggal : Senin, 29 November 2021
+@author       : Stevani Tasya Bawano
+@NIM          : 065002100017
+@Prodi        : Sistem Informasi
+
+"""
+
+print(" Ini Angka sebelum diurutkan [1,22,32,42,52,62,55,65,14] ")
+def bubbleSort(array):
+    for passnum in range(len(array)-1,0,-1):
+        for p in range(passnum):
+            if array[p]>array[p+1]:
+                temp = array[p]
+                array[p] = array[p+1]
+                array[p+1] = temp
+
+def binary_search(array,num_find):
+
+    mulai = 0
+    end = len(array) - 1
+    mid = (mulai + end)//2
+    found = False
+    position = -1
+    bubbleSort(array)
+    while mulai <= end:
+        if array[mid] == num_find:
+            found = True
+            position = mid
+            break
+        if num_find > array[mid]:
+            mulai = mid + 1
+            mid = (mulai + end)//2
+        else:
+            end = mid - 1
+            mid = (mulai + end)//2
+
+    print(" Setelah diurutkan: ", array)
+    return (found, position-1)
+
+array= [1,22,32,42,52,62,55,65,14]
+num = int(input('Masukkan angka yang akan dicari: '))
+
+found = binary_search(array,num )
+if found[0]:
+    print('Nomor %d ditemukan di posisi %d'%(num, found[1]+2))
+else:
+    print('Nomor %d tidak ditemukan'%num)

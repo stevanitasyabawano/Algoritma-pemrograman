@@ -1,0 +1,32 @@
+# -*- coding: utf-8 -*-
+"""
+
+Created on Mon Dec  6 14:44:11 2021
+@Materi       : Object Oriented Programming Pada Python
+@Judul        : Praktikum 12 lat.1 (modul 11)
+@Hari/Tanggal : Senin, 6 Desember 2021
+@author       : Stevani Tasya Bawano
+@NIM          : 065002100017
+@Prodi        : Sistem Informasi
+
+"""
+
+class mahasiswa:
+    
+   def __init__(self,nama,nim,angkatan):
+        
+        self.nama = nama
+        self.nim = nim
+        self.angkatan = angkatan
+        
+   def biodata_mahasiswa(self):
+       print("nama mu adalah : ",self.nama)
+       print("nim mu adalah : ",self.nim)
+       print("angkatan mu adalah : ",self.angkatan)
+       
+nama = str(input("masukkan nama mu : "))
+nim = str(input("masukkan nim mu : "))
+angkatan = str(input("masukkan angkatan mu : "))
+
+biodata = mahasiswa(nama,nim,angkatan)
+biodata.biodata_mahasiswa()

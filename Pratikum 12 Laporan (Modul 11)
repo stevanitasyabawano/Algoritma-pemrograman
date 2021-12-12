@@ -1,0 +1,77 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Dec 13 01:43:46 2021
+@Judul : Praktikum ke 12 latihan ke-2 
+@author: Stevani Tasya Bawano
+@NIM   : 065002100017
+
+"""
+
+
+class mahasiswa:
+    
+    def _init_(self,nilai,nama):
+        
+        self.nilai = nilai
+        self.nama = nama
+        
+    
+    def ubah(self): 
+        
+        print("Nama Kamu Adalah : " + self.nama)
+        print("print nilai kamu adalah : " + str(self.nilai))
+       
+             
+
+perulangan = 0 
+
+while perulangan == 0 :
+    
+    print("==== Program OOP ==== ")
+    print("1.Mendeklarasikan Objek")
+    print("2.Menampilkan Objek")
+    print("3.Mengganti Objek")
+    print("4.Menghapus Objek")
+    print("5.Menutup Program")
+    
+    pilihan = int(input("Masukan Pilihan kamu (1/2/3/4/5) :  "))
+    
+    if pilihan == 1 :
+        
+        nama = str(input("Masukan Nama Kamu : "))
+        nilai = str(input("Masukan Nilai Kamu : "))
+        biodata = str(input("mahasiswa(nilai.nama) : "))
+        print("Data Berhasil Ditambahkan")
+        
+    elif pilihan == 2 :
+        
+        biodata = mahasiswa(nilai.nama)
+        biodata.ubah()
+       
+     
+    elif pilihan ==3 :
+        
+        s ="nama"
+        t ="nilai"
+        
+        perubahan=input("Apa yang ingin kamu ubah (Nama/Nilai) : ")
+        
+        if(perubahan == s):
+            
+            nama = input("masukan namamu :")
+            print("data berhasil di ubah")
+            
+        elif(perubahan == t):
+            
+            nilai = input("masukan nilaimu :")
+            print("data berhasil diubah")
+            
+    elif pilihan == 4 :
+        
+        nama = "none"
+        nilai = "none"
+        print("data berhasil di hapus")
+        
+    elif pilihan == 5:
+        print("terima kasih telah menggunakan program")
+        break

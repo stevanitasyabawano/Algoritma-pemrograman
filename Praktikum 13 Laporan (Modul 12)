@@ -1,0 +1,41 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Dec 24 01:53:05 2021
+
+@author: Stevani Tasya Bawano
+@NIM   : 065002100017
+"""
+
+import pandas as pd
+
+def pertama(data):
+    
+    file = open("negaraMean.csv","w")
+    file.write(data)
+    file.close()
+
+def kedua(data):
+    
+    file = open("NegaraStandarDevisiasi.csv","w")
+    file.write(data)
+    file.close()
+
+data = {"Negara": ["Indonesia", "Jepang", "India", "China", "Amerika Serikat", "Brazil", "Rusia"],
+        "Ibu Kota": ["Jakarta", "Tokyo", "New Delhi", "Beijing", "Washington DC", "Brazilia", "Moskow"],
+        "Benua": ["Asia", "Asia", "Asia", "Asia", "Amerika", "Amerika", "Asia"],
+        "Luas": [1905, 377, 3287, 9597, 9834, 8515, 17098],
+        "Populasi": [264, 143, 1252, 1357, 329, 210, 146] }
+
+df = pd.DataFrame(data)
+mean = df.groupby(['Benua']).mean()
+std = df.groupby(['Benua']).std()
+
+print("Berikutnya Data Framenya:\n")
+print(df)
+print("\nBerikutnya Data Mean:")
+print(mean)
+print("\nBerikutnya Data Standar Devisiasi")
+print(std)
+pertama(str(mean))
+kedua(str(std))
+print("\nFile ini Berhasil dibuat")

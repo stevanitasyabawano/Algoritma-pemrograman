@@ -1,0 +1,13 @@
+col_list=['Price', 'Bedrooms']
+numhouse = data_Stevani[data_Stevani.columns[data_reza.columns.isin(col_list)]]
+numhouse.plot.scatter(x='Bedrooms', y='Price')
+
+col_list=['Price', 'Bathrooms']
+numhouse = data_Stevani[data_reza.columns[data_Stevani.columns.isin(col_list)]]
+numhouse.plot.scatter(x='Bathrooms', y='Price')
+
+col_list=['Price', 'Bathrooms']
+numhouse = data_Stevani[data_Stevani.columns[data_Stevani.columns.isin(col_list)]]
+plt.figure(figsize=(15,5))
+numhouse.boxplot(by='Bathrooms')
+plt.show()
